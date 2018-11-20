@@ -79,8 +79,8 @@ header.scroll-css .navbar-default .navbar-nav > .active > a, header.menu-transpa
     }
 
 .btn-color.btn-border, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .pagination > li:not(.disabled):hover > a i:before {
-    border-color: #5584ff !important;
-    color: #5584ff !important;
+    border-color: #62d4d4 !important;
+    color:  #62d4d4 !important;
 }
 
 .nav.inner.ms-rounded > li > a:hover, .nav.inner.ms-rounded > li.active a, .white .btn:hover, .white .btn, .white .btn:hover {
@@ -2709,3 +2709,19 @@ RESPONSIVE
  }
 }
 
+.span-influence {
+    font-size: 14px;
+    background-color: #62d4d4;
+}
+
+.span-start-from-influence {
+    font-size: 8.5px;
+    font-weight: 100;
+    text-transform: lowercase;
+}
+
+.pricing-img-giattt-influence {
+  margin-bottom: 15px;
+  width: 50px;
+  height: auto;
+}
