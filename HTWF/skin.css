@@ -2725,3 +2725,13 @@ RESPONSIVE
   width: 50px;
   height: auto;
 }
+
+.btn-digital {
+    position:relative; 
+    z-index: 3;
+    font-size: 11px; 
+    width: 100%; 
+    text-transform: uppercase; 
+    border-radius: 25px;
+    color: #ffc122;
+}
