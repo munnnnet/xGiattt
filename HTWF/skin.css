@@ -2820,3 +2820,7 @@ RESPONSIVE
 .btn-sm-circle-mandiri-active:hover {
     box-shadow: none;
 }
+
+.shadow-2 {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
