@@ -2644,6 +2644,13 @@ RESPONSIVE
     font-style: italic;
 }
 
+.span-paypal-small {
+    text-transform: none;
+    font-size: 9px;
+    font-weight: 300;
+    color: #171F57;
+}
+
 .span-idr {
     font-size: 14px;
     font-weight: 300;
@@ -2734,4 +2741,82 @@ RESPONSIVE
     text-transform: uppercase; 
     border-radius: 25px;
     color: #ffc122;
+}
+
+.border-radius-none-bottom {
+    border-bottom-right-radius: 0px !important; 
+    border-bottom-left-radius: 0px !important;
+}
+
+.box-padding-none {
+    padding-top: 17px !important;
+    padding-bottom: 30px !important;
+}
+
+.box-padding-none h3{
+    padding-right: 0px !important; 
+    line-height: 26px !important; 
+    font-weight: 600 !important;
+    font-size: 20.5px !important;
+}
+
+.circle-none {
+    border-radius: 2px !important;
+    width: auto !important;
+    height: 50px !important;
+    background-color:#ffa09e !important;
+    color: #fff !important;
+    border: 3px solid #fff !important;
+    font-size: 24px !important;
+    line-height: 24px !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.13) !important;
+    margin-top: -30px !important;
+} 
+
+.box-padding-none p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+
+.upparcase-1 {
+    text-transform: uppercase;
+}
+
+.weight-1 {
+    font-weight: 500;
+}
+
+.b-small-text {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.btn-sm-padding-small {
+    padding: 8px auto !important;
+}
+
+.btn-sm-circle-mandiri {
+    border-radius: 60px !important;
+    padding: 10px 15px !important;
+    border:1px solid #ffc122;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.btn-sm-circle-mandiri:hover {
+    border:1px solid #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.13);
+}
+
+.btn-sm-circle-mandiri-active {
+    border-radius: 60px !important;
+    padding: 10px 15px !important;
+    border:1px solid #ffc122;
+    background-color: #ffc122;
+    color: #fff;
+}
+
+.btn-sm-circle-mandiri-active:hover {
+    box-shadow: none;
 }
