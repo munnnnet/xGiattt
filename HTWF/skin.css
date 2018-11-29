@@ -2824,3 +2824,8 @@ RESPONSIVE
 .shadow-2 {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
+
+.flag-influencer {
+    width: 20px;
+    height: auto;
+}
