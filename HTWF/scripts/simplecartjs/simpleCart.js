@@ -90,9 +90,9 @@
 					checkout				: { 
 						type: "PayPal", 
 						email: "dana@giattt.com", 
-						success: base_url + "order/success.html", 
-						error: base_url + "order/error.html",
-						cancel: base_url + "order/failed.html" 
+						success: "https://giattt.com/order/success.html", 
+						error: "https://giattt.com/order/error.html",
+						cancel: "https://giattt.com/order/failed.html", 
 					},
 					currency				: "USD",
 					language				: "english-us",
