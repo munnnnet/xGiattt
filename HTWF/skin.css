@@ -770,7 +770,11 @@ header.scroll-css .navbar-nav > li > .dropdown-menu {
 }
 
 .icon-menu .navbar-main .nav.navbar-right {
-    margin-top: 13px;
+    margin-top: -15px;
+}
+
+body#services .icon-menu .navbar-main .nav.navbar-right {
+    margin-top: 8px;
 }
 
 .search-box {
@@ -2849,3 +2853,35 @@ RESPONSIVE
 .bg-grey {
     background-color: #f9f9f9 !important;
 }
+
+.navbar-toggle-cart {
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.navbar-toggle-cart img{
+    margin-top:10px;
+}
+
+.navbar-toggle-cart span.simpleCart_quantity {
+    font-size: 9px;
+    margin-left: -5px;
+    color: #fff;
+    padding: 7px !important;
+    background: #205d76;
+    border-radius: 25px;
+    margin-top: -12px;
+}
+
+@media screen and (max-width: 992px) {
+    .hidden-mobile-cart {
+    display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-toggle-cart {
+    display: none;
+    }
+   }

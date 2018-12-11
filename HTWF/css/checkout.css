@@ -300,10 +300,11 @@ a.remove:hover {
 .promoCode label {
   display: block;
   width: 100%;
-  font-style: italic;
   font-size: 1.15em;
   margin-bottom: 0.5em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.001em;
+  text-transform: lowercase;
+  font-weight: 300;
 }
 .promoCode input {
   width: 85%;
@@ -507,10 +508,22 @@ a.remove:hover {
   width: 15.5%;
 }
 
+@media screen and (max-width: 600px) {
+  .simpleCart_items .headerRow .item-price {
+  display: none;
+  }
+ }
+
 .simpleCart_items .itemRow .item-price {
   font-weight: 300;
   font-size: 12px;
 }
+
+@media screen and (max-width: 600px) {
+  .simpleCart_items .itemRow .item-price {
+  display: none;
+  }
+ }
 
 .item-decrement {
   margin-right: 1%;
@@ -541,9 +554,15 @@ a.simpleCart_increment {
 }
 
 .item-total {
-  width: 10%;
+  width: 12%;
   margin-right: 1%;
 }
+
+@media screen and (max-width: 600px) {
+  .item-total {
+    width: 24%;
+  }
+ }
 
 .item-remove {
   width: 12%;

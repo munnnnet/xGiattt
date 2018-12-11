@@ -2077,7 +2077,11 @@ header .icon-top.nav > li > a i {
 }
 
 .scroll-css .icon-menu.icon-menu .nav.navbar-right {
-    margin-top: -9px;
+    margin-top: -28px;
+}
+
+body#services .scroll-css .icon-menu.icon-menu .nav.navbar-right {
+    margin-top: -5px;
 }
 
 .scroll-css .icon-menu.icon-menu-top .nav.navbar-right {
