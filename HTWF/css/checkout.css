@@ -496,7 +496,7 @@ a.remove:hover {
 }
 
 .simpleCart_items .headerRow .item-name {
-  width: 40.5%;
+  width: 47%;
 }
 
 .item-price {
@@ -581,4 +581,11 @@ a.simpleCart_increment {
 
 .none-border {
   border-top: none !important;
+}
+
+.item-thumb img {
+  width: 50px;
+  height: auto;
+  border-radius: 3px;
+  margin-right: 12px;
 }

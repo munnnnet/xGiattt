@@ -736,14 +736,21 @@ CUSTOMER SERVICES FLOAT GIATTT
 }
 
 .float-qty {
-    background-color: #205d76;
-    color: #fff;
-    font-size: 12px;
-    padding: 7px !important;
-    border-radius: 45px;
-    margin-left: -16px;
-    font-weight: 400;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+        /* background-color: #205d76; */
+        color: #205d76;
+        font-size: 1.3em;
+        /* padding: 3px !important; */
+        /* border-radius: 45px; */
+        margin-left: 29px;
+        margin-top: -21px;
+        font-weight: 400;
+        /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); */
+}
+
+.subtx {
+    text-transform: lowercase;
+    font-weight: 200;
+    font-size: 10px;
 }
 
 .hidden-mobile-cart img {

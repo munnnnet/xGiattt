@@ -94,6 +94,7 @@
 					cartStyle				: "div",
 					cartColumns			: [
 
+						{ attr: "thumb", label: false, view: "image"},
 						{ attr: "name", label: "Name" },
 						{ view: "decrement", text: "-", label: false},
 						{ attr: "quantity", label: "Qty" },

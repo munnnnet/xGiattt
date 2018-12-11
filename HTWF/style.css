@@ -893,6 +893,7 @@ header.hamburger-header {
 .navbar-brand img {
     transition: all .3s;
     max-height: 100%;
+    margin-top: 6px;
 }
 
 .navbar-brand.scroll-show.showed {

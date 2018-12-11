@@ -2865,13 +2865,14 @@ RESPONSIVE
 }
 
 .navbar-toggle-cart span.simpleCart_quantity {
-    font-size: 9px;
+    font-size: 13px;
     margin-left: -5px;
     color: #fff;
-    padding: 7px !important;
+    padding: 3px !important;
     background: #205d76;
     border-radius: 25px;
     margin-top: -12px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 992px) {
@@ -2889,5 +2890,37 @@ RESPONSIVE
 @media screen and (max-width: 992px) {
     .hidden-mobile-cart-2 {
         display: none !important;
+    }
+}
+
+.hidden-mobile-cart-2 img {
+    margin: -2px 0px 0 0 !important;
+}
+
+.button-header {
+    margin-top: 3px;
+    background: #ffc120;
+    border: none;
+    color: #fff;
+    font-weight: 100;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+.button-header::after{
+    content: "\276f";
+    padding: 0.5em;
+    position: relative;
+    right: 0;
+}
+
+.checkout-button-header {
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 993px) {
+    .checkout-button-header {
+        margin-top: 10px;
+        margin-right: 10px;
     }
 }
