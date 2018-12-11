@@ -87,7 +87,13 @@
 
 				// default options
 				settings = {
-					checkout				: { type: "PayPal", email: "dana@giattt.com", success: "order/success.html", error: "order/error.html" },
+					checkout				: { 
+						type: "PayPal", 
+						email: "dana@giattt.com", 
+						success: base_url + "order/success.html", 
+						error: base_url + "order/error.html",
+						cancel: base_url + "order/failed.html" 
+					},
 					currency				: "USD",
 					language				: "english-us",
 
