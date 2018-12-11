@@ -402,7 +402,7 @@ CUSTOM CLASSES
 
 .box-pin:before {
     content: "";
-    background-image: url(images/line-2.png);
+    background-image: url(../images/line-2.png);
     background-position: right center;
     background-repeat: no-repeat;
     position: absolute;
@@ -418,7 +418,7 @@ CUSTOM CLASSES
 }
 
     .box-pin.box-pin-right:before {
-        background-image: url(images/line-1.png);
+        background-image: url(../images/line-1.png);
         background-position: left center;
         right: 0;
     }
@@ -485,7 +485,11 @@ span.space {
     width: 20px;
 }
 
-.img-box:not(.circle), .img-box:not(.circle) > span, .img-box:not(.circle) img, .img-box:before, .navbar-nav > li .dropdown-menu, .advs-box.boxed, .advs-box.boxed-inverse, .google-map, .advs-box-multiple, .social-group a i:not(.circle) {
+.img-box:not(.circle) > span, .img-box:before, .navbar-nav > li .dropdown-menu, .advs-box.boxed, .advs-box.boxed-inverse, .google-map, .advs-box-multiple, .social-group a i:not(.circle) {
+    border-radius: 8px;
+}
+
+.img-box:not(.circle) img{
     border-radius: 3px;
 }
 
@@ -766,7 +770,7 @@ header.scroll-css .navbar-nav > li > .dropdown-menu {
 }
 
 .icon-menu .navbar-main .nav.navbar-right {
-    margin-top: 33px;
+    margin-top: 13px;
 }
 
 .search-box {
@@ -2670,6 +2674,10 @@ RESPONSIVE
     border: 1px solid #fff !important;
 }
 
+.btn-mandiri-white {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.13) !important;
+}
+
 .icon-giattt {
     width: 90px;
     height: auto;
@@ -2764,10 +2772,10 @@ RESPONSIVE
     border-radius: 2px !important;
     width: auto !important;
     height: 50px !important;
-    background-color:#ffa09e !important;
+    background-color:#ccc !important;
     color: #fff !important;
     border: 3px solid #fff !important;
-    font-size: 24px !important;
+    font-size: 32px !important;
     line-height: 24px !important;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.13) !important;
     margin-top: -30px !important;
@@ -2825,7 +2833,19 @@ RESPONSIVE
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
+.shadow-3 {
+    box-shadow: 0 14px 42px 0 rgba(0,0,0,.16);
+}
+
 .flag-influencer {
     width: 20px;
     height: auto;
+}
+
+.col-md-padding-less {
+    padding-left: 0px !important;
+}
+
+.bg-grey {
+    background-color: #f9f9f9 !important;
 }
