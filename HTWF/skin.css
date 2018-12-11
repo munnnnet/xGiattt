@@ -2884,4 +2884,10 @@ RESPONSIVE
     .navbar-toggle-cart {
     display: none;
     }
-   }
+}
+
+@media screen and (max-width: 992px) {
+    .hidden-mobile-cart-2 {
+        display: none !important;
+    }
+}
