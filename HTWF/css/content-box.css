@@ -53,6 +53,15 @@ CONTENT BOXES
 .advs-box .advs-box-content p {
     margin: 0 auto 0 auto;
     padding: 0;
+    white-space: normal;
+    /*overflow: scroll;
+    resize: vertical;*/
+    overflow: auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 65px;      /* fallback */
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 .advs-box .advs-box-content .btn,.advs-box .advs-box-content .btn-text {
     margin-top: 15px;
@@ -714,8 +723,9 @@ MULTIPLE
     padding: 0 !important;
 }
 
-.advs-box-multiple a.img-box {
+.flexslider .advs-box-multiple a.img-box {
     display: block;
+    height: 100%;
 }
 
 .advs-box-multiple .advs-box-content {

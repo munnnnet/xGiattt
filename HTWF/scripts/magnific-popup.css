@@ -559,13 +559,13 @@ Schiocco - Copyright (c) Federico Schiocchet - Schiocco (www.Schiocco.it) - Fram
 
 .box-lightbox {
     background-color: #FFF;
-    margin: 10px auto;
-    border-radius: 2px;
-    display: none;
-    max-width: 800px;
-    max-height: 750px;
     padding: 30px;
     float: none;
+    margin: 3% auto auto;
+    border-radius: 2px;
+    display: none;
+    max-width: 96%;
+    height: auto;
 }
 
     .box-lightbox > .flexslider:first-child {

@@ -29,8 +29,6 @@
 			return typeof HTMLElement === "object" ? o instanceof HTMLElement : typeof o === "object" && o.nodeType === 1 && typeof o.nodeName === "string";
 		},
 
-
-
 		generateSimpleCart = function (space) {
 
 			// stealing this from selectivizr
@@ -102,6 +100,7 @@
 
 						{ attr: "thumb", label: false, view: "image"},
 						{ attr: "name", label: "Name" },
+						{ attr: "size", label: false},
 						{ view: "decrement", text: "-", label: false},
 						{ attr: "quantity", label: "Qty" },
 						{ view: "increment", text: "+", label: false},
@@ -127,6 +126,7 @@
 
 
 				// main simpleCart object, function call is used for setting options
+
 				simpleCart = function (options) {
 					// shortcut for simpleCart.ready
 					if (isFunction(options)) {
@@ -1818,6 +1818,18 @@
 												fields[attr.toLowerCase()] = fields[attr.toLowerCase()] ? fields[attr.toLowerCase()] + ", " +  val : val;
 											}
 										}
+									});
+
+									// Redirect to checkout after add
+									simpleCart.bind( "afterAdd" , function(){
+										window.location.href = 'checkout.html'
+									});
+
+									// Notification redirect to paypal after checkout
+									simpleCart.bind( 'beforeCheckout' , function( data ){
+										setTimeout(function(){
+											alert('You are redirecting to Paypal')
+										}, 5000); // 5 seconds
 									});
 								}
 							});

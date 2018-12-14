@@ -303,7 +303,6 @@ a.remove:hover {
   font-size: 1.15em;
   margin-bottom: 0.5em;
   letter-spacing: -0.001em;
-  text-transform: lowercase;
   font-weight: 300;
 }
 .promoCode input {

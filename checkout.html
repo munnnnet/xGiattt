@@ -14,6 +14,9 @@
     <link rel="icon" href="images/icon/gia.jpg">
     <link rel="stylesheet" href="HTWF/css/checkout.css">
     <link rel="stylesheet" href="HTWF/skin.css">
+    <script>
+        UPLOADCARE_PUBLIC_KEY = 'b75ba7d703b8627f763e';
+    </script>
 </head>
 
 <body>
@@ -29,8 +32,15 @@
         <div class="simpleCart_items"></div>
         <br><br>
 
-        <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
-            <a href="#" class="btn"></a></div>
+        <div class="promoCode">
+            <label for="promo">
+                <b>Have additional image? Upload here. </b>
+                <br>
+            </label>
+            <input data-public-key="b75ba7d703b8627f763e" type="hidden" role="uploadcare-uploader" name="checkout_content" data-images-only="true" data-multiple="true" />
+            <br>
+            <span style="font-style:italic; font-size: 11px; margin-left: 10px;">Note: image only</span>
+        </div>
 
         <div class="subtotal cf">
             <ul>
@@ -64,6 +74,13 @@
         <script async src="HTWF/scripts/bootstrap/js/bootstrap.min.js"></script>
         <script src="HTWF/scripts/jquery.min.js"></script>
         <link rel="stylesheet" href="HTWF/scripts/bootstrap/css/bootstrap.css">
+        <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.6.1/uploadcare.full.min.js"></script>
+        <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+        <script>
+            $(".item-size div").replaceWith(function() { 
+                return "<span>" + this.innerHTML + "</span>"; 
+            });
+        </script>
     </footer>
 </body>
 
