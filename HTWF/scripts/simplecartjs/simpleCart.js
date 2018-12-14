@@ -89,7 +89,6 @@
 						type: "PayPal", 
 						email: "dana@giattt.com", 
 						success: "https://giattt.com/order/success.html", 
-						error: "https://giattt.com/order/error.html",
 						cancel: "https://giattt.com/order/failed.html", 
 					},
 					currency				: "USD",
@@ -1825,12 +1824,6 @@
 										window.location.href = 'checkout.html'
 									});
 
-									// Notification redirect to paypal after checkout
-									simpleCart.bind( 'beforeCheckout' , function( data ){
-										setTimeout(function(){
-											alert('You are redirecting to Paypal')
-										}, 5000); // 5 seconds
-									});
 								}
 							});
 
