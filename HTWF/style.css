@@ -2078,11 +2078,11 @@ header .icon-top.nav > li > a i {
 }
 
 .scroll-css .icon-menu.icon-menu .nav.navbar-right {
-    margin-top: -28px;
+    margin-top: -17px;
 }
 
 body#services .scroll-css .icon-menu.icon-menu .nav.navbar-right {
-    margin-top: -5px;
+    margin-top: 0px;
 }
 
 .scroll-css .icon-menu.icon-menu-top .nav.navbar-right {

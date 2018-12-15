@@ -546,6 +546,8 @@ h1 {
     font-size: 60px;
     line-height: 75px;
     transform: translateY(-5px);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 .text-xl {
@@ -1377,9 +1379,10 @@ table.table:not(.grid-table) > tbody > tr > td, table.table:not(.grid-table) > t
     .advs-box h3, .advs-box h2, h4, .box-steps .step-item > h3 {
         margin-top: 5px;
         margin-bottom: 20px;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 24px;
         line-height: 35px;
+        font-family: 'Playfair Display', serif;
     }
 
     .advs-box a.btn, .advs-box a.anima-button, .advs-box a.btn-text {
@@ -2779,6 +2782,7 @@ RESPONSIVE
    max-height: 55px;      /* fallback */
    -webkit-line-clamp: 2; /* number of lines to show */
    -webkit-box-orient: vertical;
+   font-family: 'Playfair Display', serif;
 }
 
 .circle-none {
@@ -2787,7 +2791,6 @@ RESPONSIVE
     height: 50px !important;
     background-color:#ccc !important;
     color: #fff !important;
-    border: 3px solid #fff !important;
     font-size: 32px !important;
     line-height: 24px !important;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.13) !important;
