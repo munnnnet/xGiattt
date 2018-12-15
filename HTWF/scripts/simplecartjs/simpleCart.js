@@ -1818,12 +1818,6 @@
 											}
 										}
 									});
-
-									// Redirect to checkout after add
-									simpleCart.bind( "afterAdd" , function(){
-										window.location.href = 'checkout.html'
-									});
-
 								}
 							});
 
