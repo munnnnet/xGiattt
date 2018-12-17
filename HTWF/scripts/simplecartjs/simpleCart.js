@@ -112,7 +112,7 @@
 
 					shippingFlatRate		: 0,
 					shippingQuantityRate	: 0,
-					shippingTotalRate		: 0,
+					shippingTotalRate		: 0.025,
 					shippingCustom		: null,
 
 					taxRate				: 0.029,

@@ -3034,3 +3034,7 @@ select.select-option {
     border-color: #205D76 !important;
     color: #fff !important;
 }
+
+h2.font-normal-lg {
+    font-family: inherit !important;
+}
