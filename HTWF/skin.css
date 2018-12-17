@@ -3038,3 +3038,12 @@ select.select-option {
 h2.font-normal-lg {
     font-family: inherit !important;
 }
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
