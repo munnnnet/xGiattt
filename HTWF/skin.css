@@ -3047,3 +3047,7 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+img.margin-top-12 {
+    margin-top: 10% !important;
+}
