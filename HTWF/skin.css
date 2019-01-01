@@ -3018,6 +3018,7 @@ select.select-option {
 
 .flex-viewport {
     overflow: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
     position: relative;
 }
 
