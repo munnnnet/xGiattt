@@ -805,7 +805,7 @@ BOXED AND BOXED INVERSE
 }
 
 .base-box.boxed, .base-box.boxed-inverse, .boxed-inverse, [class*="col-md-"].boxed, [class*="col-md-"].boxed-inverse, .grid-box > .grid-item.boxed-inverse, .row.vertical-row > div.boxed-inverse, .row.vertical-row > div.boxed {
-    border-style: none !important;
+    border-style: none;
     padding: 25px 25px 25px 25px;
 }
 
@@ -977,6 +977,7 @@ header > .navbar {
     background-color: #FFFFFF;
     margin-bottom: 0;
     border: none;
+    border-bottom: 1px solid #f9f9f9;
 }
 
     .navbar-main .btn-search {
