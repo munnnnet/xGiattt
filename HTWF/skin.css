@@ -546,13 +546,14 @@ h1 {
     font-size: 60px;
     line-height: 75px;
     transform: translateY(-5px);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Circular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
     font-weight: 700;
 }
 
 .text-xl {
     font-size: 45px !important;
     line-height: 60px;
+    letter-spacing: 0.7px;
 }
 
 .text-light {
@@ -633,7 +634,7 @@ h2, .h2 {
     font-size: 50px;
     line-height: 60px;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Circular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
 }
 
 h3, .h3 {
@@ -1383,7 +1384,7 @@ table.table:not(.grid-table) > tbody > tr > td, table.table:not(.grid-table) > t
         font-weight: 700;
         font-size: 24px;
         line-height: 35px;
-        font-family: 'Playfair Display', serif;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
     }
 
     .advs-box a.btn, .advs-box a.anima-button, .advs-box a.btn-text {
@@ -2783,7 +2784,7 @@ RESPONSIVE
    max-height: 55px;      /* fallback */
    -webkit-line-clamp: 2; /* number of lines to show */
    -webkit-box-orient: vertical;
-   font-family: 'Playfair Display', serif;
+   font-family: 'Circular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
 }
 
 .circle-none {
@@ -3020,6 +3021,9 @@ select.select-option {
     overflow: scroll !important;
     -webkit-overflow-scrolling: touch !important;
     position: relative;
+    overscroll-behavior-y: auto;
+    -ms-touch-action: auto;
+    touch-action: auto;
 }
 
 #creator-htwf .trusted .flex-viewport {
@@ -3355,7 +3359,7 @@ ul.item-preview {
   .strong-span {
       font-weight: 600;
       font-size: 1.1em;
-      font-family: 'Playfair Display', serif;
+      font-family: Circular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
   }
 
   .row-bottom-minus-30 {
@@ -3946,4 +3950,16 @@ a.pointer-none {
 
 .margin-bottom-25px {
     margin-bottom: 25px !important;
+}
+
+#talent ol.flex-control-nav {
+    display: none !important;
+}
+
+.col-margin-top-small {
+    margin-top: 14px;
+}
+
+body#talent .icon-menu .navbar-main .nav.navbar-right {
+    margin-top: 8px;
 }
