@@ -2778,7 +2778,7 @@ RESPONSIVE
     /*overflow: scroll;
     resize: vertical;*/
     overflow: auto;
-   text-overflow: ellipsis;
+    text-overflow: ellipsis;
     display: -webkit-box;
    max-height: 55px;      /* fallback */
    -webkit-line-clamp: 2; /* number of lines to show */
@@ -3203,7 +3203,7 @@ div#columns-grid small a {
 }
 
 div.overflow-vertical-scroll {
-    max-height: 384px;
+    max-height: 520px;
     overflow-x: scroll;
     border-bottom: 0.8px dashed #f2f2f2;
 }
@@ -3218,7 +3218,7 @@ div.scroll-down-details {
     border-radius: 5px;
     position: absolute;
     right: 29%;
-    margin-top: -29px;
+    margin-top: -38px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.13);
 }
 
@@ -3283,6 +3283,13 @@ img.drop-down-badge {
 span.flag-body {
     line-height: 19px;
     font-size: 0.9em;
+    letter-spacing: 0.3px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    display: -webkit-box;
+    overflow: hidden;
 }
 
 hr.border-top-d9 {
@@ -3446,25 +3453,6 @@ li.clone {
     margin-left: -20px;
   }
 
-  .accordion a {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    padding: 2rem 2rem;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.3;
-    transition: none !important;
-  }
-
   .faq-after-on::after {
     content: "see here";
     position: absolute;
@@ -3585,7 +3573,7 @@ button.btn.circle-btn.btn-lg {
 
 @media screen and (max-width: 1024px) {
     div.scroll-down-details {
-        margin-top: -400px;
+        margin-top: -510px;
     }  
   }
 
@@ -3752,7 +3740,22 @@ p.faq-answer.accordion-group-answer {
     text-transform: uppercase;
     letter-spacing: 0.4px;
     font-weight: 500 !important;
+    position: relative;
+    margin-left: 40% !important;
 }
+
+
+@media screen and (max-width: 419px) {
+    .small-span-text {
+        margin-left: 6% !important;
+    }
+    .group-faq.accordion-group-faq {
+        margin-bottom: 15px;
+    }
+    .padding-bottom-plus {
+        padding-bottom: 25px !important;
+    }
+  }
 
 .accordion-group {
     margin-left: 0px !important;
@@ -3761,12 +3764,16 @@ a.accordion-link::after {
     content: "\f103";
     padding: 0;
     position: relative;
-    right: 0;
-    top: -2px;
+    right: 52px;
+    top: 15px;
     font-family: FontAwesome;
     font-size: 16px;
     background: #fff;
     color: #205d75;
+}
+
+.group-faq.accordion-group-faq {
+    margin-bottom: 15px;
 }
 
 p.faq-answer.accordion-group-answer {
@@ -3775,6 +3782,17 @@ p.faq-answer.accordion-group-answer {
 
 .faq-after-on {
     border-bottom: 1px solid #f9f9f9;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 2rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    transition: none !important;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    position: relative;
 }
 
 .content.accordion-group-content.active {
@@ -3782,6 +3800,7 @@ p.faq-answer.accordion-group-answer {
     border-radius: 5px;
     margin-bottom: 2%;
     border: 1.3px dashed #f2f2f2;
+    margin-top: 5px;
 }
 
 .accordion-group-item {
@@ -3843,4 +3862,88 @@ a.pointer-none {
     font-weight: 300;
     letter-spacing: 0.4px;
     font-size: 12px;
+}
+
+.col-single {
+    width: 20%;
+    height: auto;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.user-profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px !important;
+}
+
+#talent .section-bg-color {
+    background: #f9f9f9 !important;
+}
+
+.col-md-11-less-margin {
+    margin-left: 4.6666667% !important;
+}
+
+.col-pricing-top-radius {
+    border-radius: 8px 8px 0px 0px !important;
+}
+
+.col-single-profile {
+    width: 15%;
+    height: auto;
+}
+
+.col-single-profile img {
+    border-radius: 8px !important;
+}
+
+.col-single-profile h4 {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 419px) {
+    .col-single-profile {
+        width: 50%;
+        margin-left: 25%;
+        height: auto;
+    }
+  }
+
+  .desc-profile-hourly {
+      font-size: 13px;
+      letter-spacing: 0.4px;
+  }
+
+  span.desc-profile {
+    line-height: 19px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.hr-desc-profile {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border-top: 0.8px dashed #eee !important;
+}
+
+.size-13px {
+    font-size: 13px !important;
+}
+
+.margin-bottom-25px {
+    margin-bottom: 25px !important;
 }
